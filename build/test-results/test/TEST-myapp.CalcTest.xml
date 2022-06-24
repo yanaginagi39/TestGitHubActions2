@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="myapp.CalcTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-20T06:41:16" hostname="DESKTOP-3C5J96T" time="0.082">
+  <properties/>
+  <testcase name="testMinus()" classname="myapp.CalcTest" time="0.078"/>
+  <testcase name="testPlus()" classname="myapp.CalcTest" time="0.002"/>
+  <system-out><![CDATA[CalcTest 開始
+CalcTestのテストメソッドをひとつ開始
+testMinus を実行: 5 - 2 = 3
+CalcTestのテストメソッドをひとつ終了
+CalcTestのテストメソッドをひとつ開始
+testPlus を実行: 2 + 3 = 5
+CalcTestのテストメソッドをひとつ終了
+CalcTest 終了
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

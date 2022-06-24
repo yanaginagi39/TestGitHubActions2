@@ -1,0 +1,22 @@
+plugins {
+  id 'java'
+}
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  testImplementation 'org.junit.jupiter:junit-jupiter:5.5.2'
+}
+
+test {
+  useJUnitPlatform()
+
+  testLogging{
+    showStandardStreams true
+    events 'started','skipped','passed','failed'
+    exceptionFormat 'full'
+  }
+}
+
