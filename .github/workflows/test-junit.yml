@@ -22,7 +22,16 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-
+    
+      - uses: actions/checkout@v2
+      - name: Restore gradle.properties
+        env:
+          GRADLE_PROPERTIES: ${{ secrets.GRADLE_PROPERTIES }}
+        shell: bash
+        run: |
+          mkdir -p ~/.gradle/
+          echo "::set-env name=GRADLE_USER_HOME::$HOME/.gradle"
+          echo ${GRADLE_PROPERTIES} > ~/.gradle/gradle.properties
       - name: run test
         uses: eskatos/gradle-command-action@v1
         with:
